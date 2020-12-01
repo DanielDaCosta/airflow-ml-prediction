@@ -15,3 +15,4 @@ docker run -d -p 8080:8080 -v /path/to/dags/on/your/local/machine/:/usr/local/ai
 # References
 
 - http://www.marknagelberg.com/getting-started-with-airflow-using-docker/
+- https://towardsdatascience.com/step-by-step-guide-of-aws-elastic-container-service-with-images-c258078130ce
