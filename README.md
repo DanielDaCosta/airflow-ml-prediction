@@ -1,4 +1,4 @@
-# airflow-etl
+# Airflow ETL
 Building an ETL pipeline orchestrated by Airflow
 
 ```
