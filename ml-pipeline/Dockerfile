@@ -7,6 +7,8 @@ RUN mkdir -p ${APP_DIR}
 WORKDIR ${APP_DIR}
 
 COPY . .
+RUN apt-get update
+RUN apt-get install libgomp1
 RUN pip install -r requirements.txt
 
 ENV READ_BUCKET=ml-sls-deploy-prd
