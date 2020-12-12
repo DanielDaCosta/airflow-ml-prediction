@@ -9,7 +9,7 @@ awsCluster = Variable.get('AwsCluster')
 awsTaskDefinition = Variable.get('AwsTaskDefinition')
 awsNetworkSubnet = Variable.get('AwsNetworkSubnet')
 awsContainerName = Variable.get('AwsContainerName')
-AIRFLOW_ECS_OPERATOR_RETRIES=2
+AIRFLOW_ECS_OPERATOR_RETRIES = 2
 
 default_args = {
    'owner': 'ml-pipeline',
