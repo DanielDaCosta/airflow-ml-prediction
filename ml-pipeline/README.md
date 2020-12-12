@@ -12,7 +12,7 @@ The final model has an forecasting horizon (The number of time periods to foreca
 
 Create a Private ECR repository
 
-```
+```bash
 $ docker images
 
 $ docker tag e9ae3c220b23 aws_account_id.dkr.ecr.region.amazonaws.com/my-web-app

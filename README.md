@@ -1,14 +1,19 @@
 # Airflow ETL
 Building an ETL pipeline orchestrated by Airflow
 
-```
+```bash
 docker pull puckel/docker-airflow
 ```
 
-We will create a volume that maps the directory on our local machine where we’ll hold DAG definitions, and the locations where Airflow reads them on the container with the following command:
+Building the image (installing *boto3* for AWS configurations):
 
+```bash 
+docker build -t ml-pipeline .
 ```
-docker run -d -p 8080:8080 -v /path/to/dags/on/your/local/machine/:/usr/local/airflow/dags  puckel/docker-airflow webserver
+
+We will create a volume that maps the directory on our local machine where we’ll hold DAG definitions, and the locations where Airflow reads them on the container with the following command
+```bash
+docker run -d -p 8080:8080 -v /Users/danieldacosta/Documents/GitHub/airflow-etl/dags:/usr/local/airflow/dags ml-pipeline
 ```
 
 
