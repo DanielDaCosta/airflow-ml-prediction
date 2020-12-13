@@ -1,6 +1,6 @@
 # Deploy ETL to ECS Fargate
 
-# Code
+## Code
 
 The XGboost model used in this ECS task can be retrieved in more detail on https://github.com/DanielDaCosta/energy-forecast
 

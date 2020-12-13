@@ -20,7 +20,7 @@ docker run -d -p 8080:8080 -v /Users/danieldacosta/Documents/GitHub/airflow-etl/
 ```
 
 ## s3
-On this example we are using two buckets one for storing the moldel .sav and inputs (.csv), and another one storing the model output.
+On this example we are using two buckets: one for storing the moldel .sav and inputs (.csv), and another one for storing the model output.
 
 - READ_BUCKET=ml-sls-deploy-prd
 - READ_DATA_PATH=data
