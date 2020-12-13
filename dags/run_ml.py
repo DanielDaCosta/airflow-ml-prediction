@@ -2,7 +2,8 @@ from airflow import DAG
 from airflow.models import Variable
 from airflow.contrib.operators.ecs_operator import ECSOperator
 import copy
-from datetime import datetime, timedelta
+from datetime import timedelta, datetime
+
 # Airflow Variables
 awsRegionName = Variable.get('AwsRegionName')
 awsCluster = Variable.get('AwsCluster')
@@ -14,7 +15,8 @@ AIRFLOW_ECS_OPERATOR_RETRIES = 2
 default_args = {
    'owner': 'ml-pipeline',
    'depends_on_past': False,
-   'retries': 0
+   'retries': 0,
+   'start_date': datetime(2020, 12, 13)
 }
 
 # DAG base information
