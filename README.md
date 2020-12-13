@@ -1,5 +1,5 @@
 # Airflow ETL
-Building an ETL pipeline orchestrated by Airflow
+Running ECS task for ML prediction orchestrated by Airflow
 
 ## Building Airflow on Docker
 
