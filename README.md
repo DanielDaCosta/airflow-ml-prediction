@@ -2,7 +2,6 @@
 Running ECS task for ML prediction orchestrated by Airflow
 
 ## Building Airflow on Docker
-
 ```bash
 docker pull puckel/docker-airflow
 ```
@@ -40,12 +39,10 @@ You will need to create the following objects:
 I recommend that you follow this tutorial: https://towardsdatascience.com/step-by-step-guide-of-aws-elastic-container-service-with-images-c258078130ce. 
 
 ## Set Environment variables on Airflow
-
 You will need to set up your AWS credentials and ECS variables on the Airflow Console
 ![Airflow_varibales](Images/Airflow_Variables.png)
 
 ## Run DAG
-
 Once everything set up you can Trigger your DAG manually and check if everthing went well.
 
 # References
