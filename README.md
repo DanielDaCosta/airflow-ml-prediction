@@ -30,11 +30,11 @@ On this example we are using two buckets: one for storing the model (`.sav`) and
 ## Deploy your ECS cluster
 You will need to create the following objects:
 
-- **Create a Cluster**. Choose `Network only`. This configuration is built using Fargate Tasks: *the Fargate launch type allows you to run your containerized applications without the need to provision and manage the backend infrastructure. When you run a task with a Fargate-compatible task definition, Fargate launches the containers for you.*
+- **Create a Cluster:** Choose `Network only`. This configuration is built using Fargate Tasks: *the Fargate launch type allows you to run your containerized applications without the need to provision and manage the backend infrastructure. When you run a task with a Fargate-compatible task definition, Fargate launches the containers for you.*
 
-- **Task Definition**. The creation of your container blueprint. You'll need to create a `Task Role`: IAM Role that tasks can use to make API requests to authorized AWS services; Since our container is reading and writing to/from s3, it will need these permissions. You will also need to create a `Task Execution Role`: an IAM that helps pulling images from your docker register, we are using ECR here.
+- **Task Definition:** The creation of your container blueprint. You'll need to create a `Task Role`: IAM Role that tasks can use to make API requests to authorized AWS services; Since our container is reading and writing to/from s3, it will need these permissions. You will also need to create a `Task Execution Role`: an IAM that helps pulling images from your docker register, we are using ECR here.
 
-- **Add a Container**. You'll need to deploy your container to ECS Fargate. You can use the Docker image on folder 'ml-pipeline' as an example.
+- **Add a Container:** You'll need to deploy your container to ECS Fargate. You can use the Docker image on folder 'ml-pipeline' as an example.
 
 I recommend that you follow this tutorial: https://towardsdatascience.com/step-by-step-guide-of-aws-elastic-container-service-with-images-c258078130ce. 
 
