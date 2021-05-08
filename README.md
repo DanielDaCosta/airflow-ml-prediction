@@ -1,5 +1,5 @@
 # Airflow ETL
-Running ECS task for ML prediction orchestrated by Airflow
+Running an ECS task for ML prediction orchestrated by Airflow
 
 ## Building Airflow on Docker
 ```bash
